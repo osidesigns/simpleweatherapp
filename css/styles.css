@@ -1,0 +1,75 @@
+
+body{font-size: 62.5%; box-sizing: border-box; }
+img{
+    width: 100%;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#cityOfContainer{
+    margin-bottom: 20px;
+}
+
+#cityOfContainer span{
+    text-align: center;
+    color: #900;
+}
+
+h2, p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+input[type="text"]{
+    padding: 5px 10px 0;
+    height: 30px;
+    flex-grow: 1;
+    border: 0;
+    outline: none;
+}
+
+button{
+    height: 40px;
+    background-color: green;
+    color: #fff;
+    border: 0;
+    outline: none;
+}
+
+#container,
+#inputContainer{
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+#inputContainer{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+}
+
+#temperatureData{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    border: 1px solid black;
+}
+
+#lowTempData
+#highTempData{
+    border: 1px solid black;
+}
