@@ -11,12 +11,13 @@ $(document).ready(function(){
 
         const queryInput = $('#zipcode').val();
 
+        // PUT IN YOUR API KEY & REMOVE THE SQUARE BRACKETS
         $.ajax({
-            url: 'http://api.openweathermap.org/data/2.5/weather?zip=' + queryInput + '&appid=8e4573990f3694e20e4ec053b92b328a',
+            url: 'http://api.openweathermap.org/data/2.5/weather?zip=' + queryInput + '&appid=[API_KEY_GOES_HERE]', 
             type: 'GET',
             success: function(response){
                 let data = response;
-                console.log(data);
+                //console.log(data);
                 $('#cityName').html(data.name);
                 if(data.weather[0].main != null){
                    let weatherCondition = '<img src="imgs/' + data.weather[0].main.toLowerCase() + '.jpg" alt="' + data.weather[0].main + '" />';
